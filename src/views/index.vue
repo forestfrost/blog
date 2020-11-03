@@ -1,5 +1,5 @@
 <template>
-  <div id="about">
+  <div id="index">
     <div class="selfdes">
       <h1>Hello!I'm dreamer</h1>
       <p>
@@ -7,13 +7,16 @@
         一些有趣的动画效果及好看的样式。
       </p>
     </div>
+    <article>
+      <img src="../../public/[NIK]69983027.jpg" alt="" />
+    </article>
   </div>
 </template>
 <script>
 export default {};
 </script>
 <style lang="less" scoped>
-#about {
+#index {
   width: 70%;
   margin: 10px auto;
   .selfdes {
@@ -22,6 +25,14 @@ export default {};
     p {
       font-size: 15px;
       margin: 10px auto;
+    }
+  }
+  article {
+    width: 90%;
+    margin: 20px auto;
+    img {
+      width: 100%;
+      height: 90%;
     }
   }
 }
