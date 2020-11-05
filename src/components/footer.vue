@@ -11,7 +11,7 @@
       <div class="tight">
         <h3>友情链接</h3>
         <ul>
-            <li>@武理第一肠粉</li>
+            <a href="https://me.csdn.net/weixin_45900618?spm=1018.2118.3001.5148" target="_blank">@武理第一肠粉</a>
         </ul>
       </div>
     </div>
@@ -38,6 +38,12 @@ export default {};
         li{
             cursor: pointer;
             height: 20px;
+            margin: 5px auto;
+        }
+        a{
+          text-decoration: none;
+          color: white;
+           height: 20px;
             margin: 5px auto;
         }
     }

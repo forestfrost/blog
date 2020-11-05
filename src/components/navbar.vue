@@ -3,7 +3,7 @@
     <div class="left">
       <router-link tag="div" to="/index">
         <div class="image"><span>Blog</span></div>
-        <span>这是一个博客</span>
+        <span>博客</span>
       </router-link>
     </div>
     <div class="right">
@@ -16,10 +16,6 @@
 export default {};
 </script>
 <style lang="less" scoped>
-.active {
-  color: orange;
-  opacity: 0.8;
-}
 @keyframes jump {
   20% {
     transform: translateY(-20px);
@@ -72,10 +68,10 @@ export default {};
         height: 40px;
         box-sizing: border-box;
         border: 1px solid white;
+        transition: 1s;
         border-radius: 50%;
         &:hover {
           transform: rotateZ(360deg);
-          transition: 1s;
         }
       }
     }
@@ -95,9 +91,13 @@ export default {};
       text-align: center;
 
       &:hover {
-        color: orange;
+        
         animation: jump 1.2s 0.1s;
       }
+    }
+    .active {
+      color: orange;
+      opacity: 0.8;
     }
   }
 }

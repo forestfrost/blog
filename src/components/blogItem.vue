@@ -8,7 +8,7 @@
       <p>2020.11.03</p>
     </div>
     <div class="right">
-      <p class="title"><b>1024：程序员，你的身体还好吗？</b></p>
+      <p class="title" @click="clickHandle(testId)"><b>1024：程序员，你的身体还好吗？</b></p>
       <p class="des">然而反观现实中程序员的工作与生活，这一天的意义真的达到了吗？从几何时，程
           序员成了加班、996 的代名词，从以前业务做不完偶尔加班变成了现在的常态，不得不说一句俗
           话：这是时代的进步还是倒退？1024 这个本该关注程序员权益的问题，非但没带来任何进步，反
@@ -16,21 +16,32 @@
           于此，本文将从生理和心理两方面来分析程序员职业风险，让更多人了解程序员所面临的健康问题
           。</p>
       <p class="tag"><span>#前端</span><span>#js</span><span>#vue</span></p>
-      <p class="read">阅读原文</p>
+      <p class="read" @click="clickHandle(testId)">阅读原文</p>
     </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+data(){
+  return{
+    testId:1,
+  }
+},
+  methods:{
+    clickHandle(id){
+      this.$router.push(`/detail/${id}`);
+    }
+  }
+};
 </script> 
 <style lang="less" scoped>
 #blogitem {
   margin: 20px auto;
   width: 100%;
-  height: 240px;
+  height: 290px;
   display: flex;
   justify-content: flex-start;
- 
+  border-bottom: 1px linen solid;
   .left {
     left: 40%;
     img {
