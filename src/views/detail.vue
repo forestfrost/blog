@@ -1,5 +1,5 @@
 <template>
-  <div id="detail">
+  <div class="detail">
     <aside class="left">
       <h4>Recent posts</h4>
       <ul>
@@ -135,7 +135,7 @@
 export default {};
 </script>
 <style lang="less" scoped>
-#detail {
+.detail{
   width: 90%;
   margin: 30px auto 0px;
   display: flex;
