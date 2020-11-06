@@ -8,7 +8,7 @@
       </p>
     </div>
     <article>
-      <img src="../../public/[NIK]69983027.jpg" alt="" />
+      <!-- <img src="../../public/[NIK]69983027.jpg" alt="" /> -->
     </article>
   </div>
 </template>
@@ -18,6 +18,7 @@ export default {};
 <style lang="less" scoped>
 #index {
   width: 70%;
+  height: 1200px;
   margin: 10px auto;
   .selfdes {
     height: 150px;

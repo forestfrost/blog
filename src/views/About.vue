@@ -15,6 +15,7 @@ export default {};
 <style lang="less" scoped>
 #about {
   width: 70%;
+  height: 859px;
   margin: 10px auto;
   .selfdes {
     height: 150px;

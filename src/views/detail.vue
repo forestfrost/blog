@@ -1,6 +1,6 @@
 <template>
   <div class="detail">
-    <aside class="left">
+    <aside class="left" v-show="isShow">
       <h4>Recent posts</h4>
       <ul>
         <li class="active">1024：程序员，你的身体还好吗？</li>
@@ -107,7 +107,7 @@
         </p>
       </div>
     </main>
-    <aside class="right">
+    <aside class="right" v-show="isShow">
       <ul class="first">
         <li>
           <a href="#id1">生理问题</a>
@@ -132,10 +132,35 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return{
+      isShow:true,
+    }
+  },
+  methods: {
+    setIsShow() {
+      if (document.documentElement.clientWidth < 870) {
+        this.isShow = false;
+      } else {
+        this.isShow = true;
+      }
+    },
+  },
+  mounted() {
+    if (document.documentElement.clientWidth < 870) {
+      this.isShow = false;
+    }
+    window.addEventListener("resize", this.setIsShow);
+    this.$store.commit("changeNavbarShow",false);
+  },
+  destroyed(){
+    this.$store.commit("changeNavbarShow",true);
+  }
+};
 </script>
 <style lang="less" scoped>
-.detail{
+.detail {
   width: 90%;
   margin: 30px auto 0px;
   display: flex;
@@ -180,7 +205,6 @@ export default {};
         margin: 10px auto;
         color: blue;
         font-style: italic;
-       
       }
       p {
         text-indent: 32px;
@@ -195,7 +219,6 @@ export default {};
         a {
           text-decoration: none;
           color: blue;
-         
         }
         margin: 9px auto;
       }

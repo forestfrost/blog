@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <navbar></navbar>
+    <navbar class="navbar"></navbar>
     <router-view></router-view>
     <myfooter></myfooter>
     </div>
@@ -24,4 +24,5 @@ export default {
 #app{
   background: linear-gradient(to bottom gray white);
 }
+
 </style>

@@ -16,7 +16,7 @@
           于此，本文将从生理和心理两方面来分析程序员职业风险，让更多人了解程序员所面临的健康问题
           。</p>
       <p class="tag"><span>#前端</span><span>#js</span><span>#vue</span></p>
-      <p class="read" @click="clickHandle(testId)">阅读原文</p>
+      <p class="read" @click="clickHandle(testId)">阅读原文▽</p>
     </div>
   </div>
 </template>
@@ -35,15 +35,49 @@ data(){
 };
 </script> 
 <style lang="less" scoped>
-#blogitem {
+@media screen and (max-width: 599px){
+  #blogitem{
+    width: 100%;
+    margin: 50px auto;
+    .left{
+      img{
+        width: 80%;
+        height: 80%;
+      }
+      p{
+        text-align: center;
+      }
+    }
+    .right{
+      .title{
+        margin: 5px auto;
+      }
+      .tag{
+        margin: 10px auto;
+        display: flex;
+        span{
+          display: block;
+          width: 50px;
+          text-align: center;
+          color: blue; 
+        }
+      }
+      .read{
+        color: orange;
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px){
+  #blogitem {
   margin: 20px auto;
   width: 100%;
-  height: 290px;
+  height: 350px;
   display: flex;
   justify-content: flex-start;
   border-bottom: 1px linen solid;
   .left {
-    left: 40%;
+    width: 40%;
     img {
       width: 120px;
       height: 150px;
@@ -57,7 +91,7 @@ data(){
     width: 60%;
     .title {
       font-size: 25px;
-      height: 40px;
+      height: 80px;
       line-height: 40px;
       &:hover{
           cursor: pointer;
@@ -67,7 +101,8 @@ data(){
       }
     }
     .des {
-      height: 140px;
+      overflow: hidden;
+      height: 200px;
     }
     .tag {
         display: flex;
@@ -95,4 +130,7 @@ data(){
     }
   }
 }
+  
+}
+
 </style>
