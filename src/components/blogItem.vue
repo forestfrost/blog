@@ -50,6 +50,7 @@ data(){
     }
     .right{
       .title{
+        cursor: pointer;
         margin: 5px auto;
       }
       .tag{
@@ -63,6 +64,7 @@ data(){
         }
       }
       .read{
+        cursor: pointer;
         color: orange;
       }
     }
@@ -81,7 +83,7 @@ data(){
     img {
       width: 120px;
       height: 150px;
-      margin: 10px 50px;
+      margin: 10px 150px;
     }
     p {
       text-align: center;
