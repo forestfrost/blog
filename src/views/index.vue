@@ -158,7 +158,7 @@ export default {
 
 .index {
   width: 70%;
-  height: 850px;
+  height: 859px;
   margin: 10px auto;
   .selfdes {
     height: 120px;
