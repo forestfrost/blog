@@ -26,11 +26,11 @@
         <div class="ring">
           <span class="firstring"></span>
           <span class="secondring">
-            <img src="http://www.ganecheng.tech/img/2.png" />
+            <img src="../../public/2.png" />
           </span>
           <span class="thirdring"> </span>
           <span class="forthring"
-            ><img src="http://www.ganecheng.tech/img/1.png" alt=""
+            ><img src="../../public/1.png" alt=""
           /></span>
         </div>
         <div class="showpage">
